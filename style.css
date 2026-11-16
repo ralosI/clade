@@ -1,0 +1,31 @@
+:root{--bg:#12101c;--panel:#1d1a2e;--line:#3a3360;--ce:#6fb7ff;--accent:#9b7bff;--red:#e0455b;--text:#e9e6f5;--mute:#9a94b8}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui,sans-serif}
+h1,h2,h3{font-family:"Yu Mincho","Hiragino Mincho ProN",Georgia,serif;font-weight:700;margin:.2em 0}
+header{padding:14px 16px;border-bottom:1px solid var(--line)}
+h1{font-size:1.6rem;color:var(--ce);letter-spacing:.03em}
+#top{display:flex;flex-wrap:wrap;gap:6px 18px;color:var(--mute)}
+#top b{color:var(--text)}
+nav{display:flex;flex-wrap:wrap;gap:6px;padding:10px 16px}
+nav button{background:none;border:1px solid var(--line);color:var(--text);padding:6px 12px;border-radius:4px;cursor:pointer}
+nav button:hover,nav button.on{background:var(--accent);border-color:var(--accent)}
+main{max-width:720px;margin:0 auto;padding:8px 16px 40px}
+section{display:none}
+section.on{display:block}
+button{font:inherit;cursor:pointer}
+button.act,.row button{background:var(--accent);color:#fff;border:0;border-radius:4px;padding:6px 12px}
+button.act{width:100%;padding:18px;font-size:1.2rem;margin:8px 0;background:linear-gradient(135deg,#3b6fe0,var(--accent))}
+button.act:active{transform:scale(.98)}
+button.poor{opacity:.45}
+button.small{background:none;border:1px solid var(--line);color:var(--mute);border-radius:4px;margin-left:10px}
+.row{display:flex;justify-content:space-between;align-items:center;gap:10px;background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:8px 12px;margin:6px 0}
+small{color:var(--mute)}
+.bar{height:12px;background:#0b0912;border-radius:6px;overflow:hidden;margin:4px 0 10px}
+.bar i{display:block;height:100%}
+.hp i{background:var(--red)}.ehp i{background:#c78bff}
+#log{background:#0b0912;border-radius:6px;padding:8px 12px;min-height:7em;color:var(--mute)}
+#log p{margin:2px 0}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:12px 14px;margin:8px 0}
+.lock{opacity:.5}
+footer{text-align:center;color:var(--mute);font-size:.8rem;padding:16px}
+@media (prefers-reduced-motion:no-preference){.bar i{transition:width .3s}}
